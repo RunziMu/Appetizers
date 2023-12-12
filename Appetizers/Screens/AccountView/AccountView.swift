@@ -23,17 +23,18 @@ struct AccountView: View {
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled(true)
                     DatePicker("Date of birth", selection: $viewModel.user.birthdate, displayedComponents: .date)
+                }
+                Section(header:Text("Requests")){
+                    Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
+                    Toggle("Frequet Refills", isOn: $viewModel.user.frequentRefills)
+                }
+                Section(header:Text("Action")){
                     Button{
                         viewModel.saveChanges()
                     } label: {
                         Text("Save Changes")
                     }
                 }
-                Section(header:Text("Requests")){
-                    Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
-                    Toggle("Frequet Refills", isOn: $viewModel.user.frequentRefills)
-                }
-                //                .toggleStyle(SwitchToggleStyle(tint: .teal))
             }
             .navigationTitle("Account")
         }

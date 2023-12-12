@@ -13,6 +13,8 @@ final class AppetizerListViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var isShowingDetail = false
     @Published var selectedAppetizer: Appetizer?
+    @Published var noInternet = false
+    
     func getAppetizers() {
         isLoading = true
         NetworkManager.shared.getAppetizers { [self] result in
@@ -31,6 +33,7 @@ final class AppetizerListViewModel: ObservableObject {
                         self.alertItem = AlertContext.invalidData
                     case .unableToComplete:
                         self.alertItem = AlertContext.unableToComplete
+                        self.noInternet = true
                     }
                 }
             }

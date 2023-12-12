@@ -29,6 +29,7 @@ struct EmptyState: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                 Text(subMessge)
+                    .multilineTextAlignment(.center)
             }
             .offset(y: -50)
         }

@@ -10,13 +10,14 @@ import SwiftUI
 struct AppetizerListView: View {
     
     @StateObject var viewModel = AppetizerListViewModel()
+    
     var body: some View {
         
         ZStack {
             NavigationStack {
                 List(viewModel.appetizers) { appetizer in
                     AppetizerListCell(appetizer: appetizer)
-//                        .listRowSeparator(.hidden)
+                    //                        .listRowSeparator(.hidden)
                         .onTapGesture {
                             viewModel.selectedAppetizer = appetizer
                             withAnimation{
@@ -32,6 +33,9 @@ struct AppetizerListView: View {
                 viewModel.getAppetizers()
             }
             .blur(radius: viewModel.isShowingDetail ? 6 : 0)
+//            if viewModel.noInternet {
+//                EmptyState(imageName: "wifi.slash", mainMessage:  "No Internet Connection", subMessge: "To connect, turn off Airplane Mode \n or connect to a Wi-Fi network.")
+//            }
             if viewModel.isShowingDetail {
                 AppetizerDetailView(appetizer: viewModel.selectedAppetizer!,
                                     isShowingDetail: $viewModel.isShowingDetail)
@@ -41,7 +45,7 @@ struct AppetizerListView: View {
             }
         }
         .alert(item: $viewModel.alertItem) { alertItem in
-            Alert(title: alertItem.title, 
+            Alert(title: alertItem.title,
                   message: alertItem.message,
                   dismissButton: alertItem.dismissButton)
         }

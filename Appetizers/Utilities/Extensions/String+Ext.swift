@@ -15,3 +15,4 @@ extension String {
         return emailPredicate.evaluate(with: self)
     }
 }
+
