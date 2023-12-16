@@ -29,13 +29,10 @@ struct AppetizerListView: View {
                 .listStyle(.plain)
                 .disabled(viewModel.isShowingDetail)
             }
-            .onAppear{
+            .task {
                 viewModel.getAppetizers()
             }
             .blur(radius: viewModel.isShowingDetail ? 6 : 0)
-//            if viewModel.noInternet {
-//                EmptyState(imageName: "wifi.slash", mainMessage:  "No Internet Connection", subMessge: "To connect, turn off Airplane Mode \n or connect to a Wi-Fi network.")
-//            }
             if viewModel.isShowingDetail {
                 AppetizerDetailView(appetizer: viewModel.selectedAppetizer!,
                                     isShowingDetail: $viewModel.isShowingDetail)
@@ -44,7 +41,7 @@ struct AppetizerListView: View {
                 LoadingView()
             }
         }
-        .alert(item: $viewModel.alertItem) { alertItem in
+        .alert(item: $viewModel.alertItem) { alertItem in 
             Alert(title: alertItem.title,
                   message: alertItem.message,
                   dismissButton: alertItem.dismissButton)

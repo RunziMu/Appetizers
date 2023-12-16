@@ -10,6 +10,7 @@
 		B642EE412B28E09E0003E6CD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B642EE402B28E09E0003E6CD /* Launch Screen.storyboard */; };
 		B68117952B27C82F00782E73 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68117942B27C82F00782E73 /* EmptyState.swift */; };
 		B68117972B27DAD200782E73 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68117962B27DAD200782E73 /* Order.swift */; };
+		B6C50E282B2A7DAE00F4530A /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C50E272B2A7DAE00F4530A /* Date+Ext.swift */; };
 		B6F827AA2B1FCFEC00F37EE7 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F827A92B1FCFEC00F37EE7 /* AppetizersApp.swift */; };
 		B6F827AC2B1FCFEC00F37EE7 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F827AB2B1FCFEC00F37EE7 /* AppetizerTabView.swift */; };
 		B6F827AE2B1FCFED00F37EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F827AD2B1FCFED00F37EE7 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		B642EE402B28E09E0003E6CD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B68117942B27C82F00782E73 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		B68117962B27DAD200782E73 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		B6C50E272B2A7DAE00F4530A /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		B6F827A62B1FCFEC00F37EE7 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F827A92B1FCFEC00F37EE7 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		B6F827AB2B1FCFEC00F37EE7 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F827E52B250FBE00F37EE7 /* String+Ext.swift */,
+				B6C50E272B2A7DAE00F4530A /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				B6F827AA2B1FCFEC00F37EE7 /* AppetizersApp.swift in Sources */,
 				B6F827C82B22697E00F37EE7 /* Alert.swift in Sources */,
 				B6F827B82B1FD07100F37EE7 /* AppetizerListView.swift in Sources */,
+				B6C50E282B2A7DAE00F4530A /* Date+Ext.swift in Sources */,
 				B6F827BC2B1FD09500F37EE7 /* OrderView.swift in Sources */,
 				B6F827E42B250E6B00F37EE7 /* AccountViewModel.swift in Sources */,
 				B6F827E22B25024800F37EE7 /* XDismissButton.swift in Sources */,
@@ -483,7 +487,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,7 +518,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
