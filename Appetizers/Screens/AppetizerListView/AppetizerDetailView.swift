@@ -27,8 +27,10 @@ struct AppetizerDetailView: View {
                     .padding(.top)
                 Text(appetizer.description)
                     .multilineTextAlignment(.center)
+                    .foregroundStyle(.linearGradient(colors: [.pink, .purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
                     .font(.body)
                     .padding()
+                    .bold()
                 
                 HStack (spacing: 40){
                     NutritionInfo(title: "Calories", value: "\(appetizer.carbs)")
