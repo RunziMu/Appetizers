@@ -7,25 +7,6 @@
 
 import SwiftUI
 
-//struct APButton: View {
-//    
-//    let title: LocalizedStringKey
-//    let sysImage: String!
-//    let width: Double
-//    let height: Double
-//    var body: some View {
-//        Button {
-//            print("APButton Tapped")
-//        } label: {
-//            Label(title, systemImage: sysImage)
-//                .frame(width: width, height: height)
-//        }
-//        .buttonStyle(.borderedProminent)
-//        .controlSize(.large)
-//        .padding(.bottom, 20)
-//    }
-//}
-
 struct APButton: View {
     
     let title: LocalizedStringKey
